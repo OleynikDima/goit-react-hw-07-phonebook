@@ -1,0 +1,77 @@
+
+
+/*-= find contact =-*/
+.filter {
+    width: 292px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 4px -2px black; 
+    display: flex;
+    justify-content: flex-end;
+
+    /* width: 292px;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px -2px black; */
+}
+
+.input_cont {
+    padding: 0;
+    padding-left: 10px;
+    width: 92%;
+    height: 26px;
+    color: black;
+    transition:  300ms;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 4px;
+}
+
+.label {
+    /* width: 100%; */
+    font-size: 12px;
+    /* margin: 0;
+    padding: 0; */
+}
+
+
+
+
+/*--list Contact--*/
+
+.item {
+    width: 270px;
+    font-size: 12px;
+    margin: 0;
+    padding: 2px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px -2px black;
+}
+
+.button {
+    margin: 0;
+    padding: 0 5px;
+    background-color: red;
+    cursor: pointer;
+    border:none;
+    border-radius:2px;
+    color: white;
+    font-size: 12px;
+}
+.list {
+    padding: 0;
+}
+
+.box_contact {
+    width: 290px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+}
+

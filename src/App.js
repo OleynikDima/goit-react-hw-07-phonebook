@@ -1,13 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Form from './components/Form';
+import ContactsList from './components/Contacts';
+import ContactFilter from './components/Filter/ContactFilter';
+import {connect} from 'react-redux';
 
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-        <h1> Go Work ))!! </h1>
-    </div>
-  );
+
+import appFetch from './redux/action/app'
+import selectors from './redux/selectors'
+
+
+class App extends Component{
+    componentDidMount(){
+       this.props.onFetchContacts();
+    }
+    render(){
+        return (
+            <>
+                <Form />
+                {this.props.contacts.length > 1 && 
+                    <ContactFilter /> 
+                }       
+                <ContactsList/>
+            </>
+        )
+    }
 }
 
-export default App;
+
+const mapStateToProps = state => ({
+        contacts:selectors.getContactsItems(state)
+})
+
+const mapDispatchProps = {
+    onFetchContacts:appFetch.fetchItems
+}
+
+export default connect(mapStateToProps,mapDispatchProps)(App);
