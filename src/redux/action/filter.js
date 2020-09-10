@@ -1,6 +1,6 @@
 import {createAction} from '@reduxjs/toolkit'
-// import CHANGE_FILTER  from '../constanta'
 
+// input search contacts
 const  changeFilter = createAction('contacts/changeFilter');
 
 export default changeFilter;

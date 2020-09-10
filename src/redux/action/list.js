@@ -1,7 +1,7 @@
 import {createAction} from '@reduxjs/toolkit';
 import axios from 'axios';
-// import { REMOVE_REQUST, REMOVE_SUCCESS, REMOVE_ERROR } from '../constanta'
 
+// delete contact from list 
 const removeItemRequest = createAction('contacts/removeRequest');
 const removeItemSuccess = createAction('contacts/removeSuccess');
 const removeItemError = createAction('contacts/removeError');

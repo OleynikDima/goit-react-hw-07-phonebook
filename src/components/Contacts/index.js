@@ -14,7 +14,6 @@ import selector  from '../../redux/selectors'
 // func create list item 
 
 const Contacts = ({contacts, onDelete}) => {
-    console.log(contacts);
     return (
     <div className={style.box_contact}>
         <TransitionGroup component='ul'className={style.list} >

@@ -11,6 +11,7 @@ import selectors from './redux/selectors'
 
 
 class App extends Component{
+    //add list contacts in load site
     componentDidMount(){
        this.props.onFetchContacts();
     }

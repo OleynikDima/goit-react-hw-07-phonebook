@@ -7,8 +7,6 @@ import listAction from '../action/list'
 import filterAction from '../action/filter'
 
 
-
-
 const newItemObj = (state, action) => {
     return [...state, action.payload]
 }

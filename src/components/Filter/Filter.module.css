@@ -1,0 +1,24 @@
+/*-= find contact =-*/
+.filter {
+    width: 292px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 4px -2px black; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input_cont {
+    padding: 0;
+    padding-left: 10px;
+    width: 92%;
+    height: 26px;
+    color: black;
+    transition:  300ms;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 4px;
+}
+
+.label {
+    font-size: 12px;
+}

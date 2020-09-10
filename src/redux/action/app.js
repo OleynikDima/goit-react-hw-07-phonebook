@@ -1,8 +1,8 @@
 import {createAction} from '@reduxjs/toolkit';
 import axios from 'axios';
-// import {FETCH_REQUST,FETCH_SUCCESS,FETCH_ERROR} from '../constanta'
 
 
+// fetchAction  to server 
 const fetchItemRequest = createAction('contacts/fetchRequest');
 const fetchItemSuccess = createAction('contacts/fetchSuccess');
 const fetchItemError = createAction('contacts/fetchError');

@@ -5,7 +5,7 @@ import './transition/animation.css'
 import redAlert from './transition/alert.module.css'
 import MessageRed from './alert.js'
 
-// import taskAction from '../redux/taskAction'
+
 import addAction from '../../redux/action/form'
 import {connect} from 'react-redux'
 import selectors from '../../redux/selectors'
@@ -85,7 +85,6 @@ render(){
             <input 
             className={styles.input_number}
             type="input" 
-            country="US"
             value={this.state.number}
             onChange={this.handleChangeNumber}
             placeholder="number phone"
@@ -96,7 +95,7 @@ render(){
          <button 
             className={styles.button} 
             type="submit"
-            disabled={!this.state.text}
+            disabled={!this.state.text || !this.state.number}
             >
                 { this.props.isLoadingBtn === true ? `Loading ` : `Add contact`
                 } 
@@ -108,7 +107,7 @@ render(){
 }
 
 
-
+//store => states
 const mapStateToProps = state => {
       return {
         isLoadingBtn:selectors.getIsLoadingBtn(state),

@@ -1,12 +1,14 @@
 import React from 'react';
-import style from '../Contacts/Contact.module.css';
+
+import style from './Filter.module.css';
 import { CSSTransition } from 'react-transition-group';
-import filterStyle from '../Contacts/transition/filter.module.css';
+import filterStyle from './transition/filter.module.css';
 
 
 import {connect} from 'react-redux'
 import filterAction from '../../redux/action/filter'
 import selection from  '../../redux/selectors'
+
 
 
 //Filter input for Contacts 
